@@ -31,7 +31,7 @@ public class SplashActivity extends ManageActivity {
 				ScreenManager.getScreenManager().popActivity();
 
 			}
-		},3000);
+		},1500);
 	}
 
 	@Override
