@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dis">
+        <item>恐怖袭击报警</item>
+        <item>哨兵被袭报警</item>
+        <item>打架斗殴报警</item>
+        <item>自然灾害报警</item>
+        <item>群体事件报警</item>
+    </string-array>
+</resources>

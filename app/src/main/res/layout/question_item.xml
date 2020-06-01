@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/common_ten_dp">
+
+    <ImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginLeft="5dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/icon"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_ten_dp"
+        android:layout_marginRight="@dimen/common_ten_dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:textColor="#333333"
+            android:text="etet"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="sdgg"
+            android:textSize="16sp"
+            android:textColor="#666666" />
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:text="sssd"
+            android:textColor="#999999"
+            android:textSize="12sp"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:padding="10dp"
+        android:text="删除"
+        android:textSize="16sp"
+        android:textColor="#666666"
+        android:background="@drawable/gray_boder"/>
+</LinearLayout>

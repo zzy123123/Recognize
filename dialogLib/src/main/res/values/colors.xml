@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="dialog_action_color">#ff5800</color>
+    <color name="dialog_black">#000000</color>
+    <color name="dialog_gray_text">#333333</color>
+    <color name="dialog_white">#ffffff</color>
+    <color name="dialog_white_20_alpha">#ccffffff</color>
+    <color name="gray_d9d9d9">#D9D9D9</color>
+    <color name="dialog_black_20_alpha">#cc000000</color>
+    <color name="dialog_press_normal">#F6F6F6</color>
+    <color name="dialog_pressed">#E0E0E0</color>
+    <!--dialog 取消颜色-->
+    <color name="dialog_cancel">#7e7e7e</color>
+    <color name="dialog_gray_bg">#dddddd</color>
+    <color name="dialog_gray">#808080</color>
+
+    <color name="dialog_confirm_btn_bg_color">#fdf3e8</color>
+    <!-- 确认框按钮按下背景色-->
+    <color name="dialog_confirm_btn_bg_pressed_color">#66fdf3e8</color>
+    <!-- 按钮灰色文字禁用色-->
+    <color name="btn_text_disable_color">#66808080</color>
+
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="actionsheet_red">#FD4A2E</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+    <color name="transparent">#00000000</color>
+    <color name="pressed_while">#D3D3D3</color>
+    <color name="line_grey">#d3d3d3</color>
+    <color name="text_middle_grey">#858585</color>
+    <color name="bg_grey">#f2f2f2</color>
+
+    <color name="text_dark_grey">#222222</color>
+    <color name="text_blue">#16A085</color>
+    <color name="notice_back">#2B2B2B</color>
+    <color name="hint_gray">#CFCFD4</color>
+</resources>

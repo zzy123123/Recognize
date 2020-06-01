@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="common_ten_dp">10dp</dimen>
+    <dimen name="grid_expected_size">120dp</dimen>
+    <dimen name="picker_view_height">160dp</dimen>
+    <dimen name="date_unit_text_size">18sp</dimen>
+
+    <dimen name="radio_button_conner_radius">5dp</dimen>
+    <dimen name="radio_button_stroke_border">1dp</dimen>
+    <dimen name="twenty_dp">20dp</dimen>
+
+    <dimen name="text_size_small">14sp</dimen>
+    <dimen name="text_size_medium">16sp</dimen>
+    <dimen name="text_size_large">18sp</dimen>
+
+    <dimen name="height_title">48.0dip</dimen>
+
+    <dimen name="margin_3">3dp</dimen>
+    <dimen name="margin_5">5dp</dimen>
+    <dimen name="margin_8">8dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="margin_11">11dp</dimen>
+    <dimen name="margin_12">12dp</dimen>
+    <dimen name="margin_16">16dp</dimen>
+    <dimen name="margin_15">15dp</dimen>
+    <dimen name="margin_18">18dp</dimen>
+    <dimen name="margin_30">30dp</dimen>
+    <dimen name="margin_40">40dp</dimen>
+    <dimen name="height_2">2dip</dimen>
+    <dimen name="height_line">1dip</dimen>
+    <dimen name="height_40">40dip</dimen>
+    <dimen name="height_50">50dip</dimen>
+    <dimen name="height_message">75dp</dimen>
+    <dimen name="height_70">70dp</dimen>
+    <dimen name="ts_13">13sp</dimen>
+    <dimen name="ts_10">10sp</dimen>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="item_height">80dp</dimen>
+    <dimen name="item_margin_left">15dp</dimen>
+    <dimen name="item_margin_right">15dp</dimen>
+    <dimen name="activity_title_size">18sp</dimen>
+    <dimen name="activity_title_height">40dp</dimen>
+    <dimen name="common_five_dp">5dp</dimen>
+    <dimen name="fourty_dp">40dp</dimen>
+    <dimen name="divider_height_1dp">1dp</dimen>
+</resources>

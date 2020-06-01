@@ -1,0 +1,97 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
+    defaultConfig {
+        applicationId "com.recognize"
+        minSdkVersion 19
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath true
+            }
+        }
+        multiDexEnabled true
+    }
+    splits {
+        abi {
+            enable true
+            reset()
+            include 'x86', 'x86_64', 'armeabi-v7a', 'arm64-v8a' //select ABIs to build APKs for
+            universalApk true //generate an additional APK that contains all the ABIs
+        }
+    }
+    //指定jdk版本
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+
+    packagingOptions {
+        exclude 'AndroidManifest.xml'
+    }
+
+
+    buildTypes {
+        debug {
+            lintOptions {
+                checkReleaseBuilds false
+                abortOnError false
+            }
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.android.support:appcompat-v7:25.0.2'
+    //noinspection GradleDependency
+    implementation 'com.android.support:design:25.2.0'
+    implementation 'com.android.support:recyclerview-v7:25.0.2'
+    implementation 'com.cjj.materialrefeshlayout:library:1.3.0'
+    implementation 'com.github.bumptech.glide:glide:4.4.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.4.0'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'top.zibin:Luban:1.1.3'
+    implementation 'com.cjj.materialrefeshlayout:library:1.3.0'
+    implementation 'org.xutils:xutils:3.5.0'
+    implementation 'com.library.tangxiaolv:telegramgallery:1.0.5'
+    implementation 'top.zibin:Luban:1.1.3'
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation project(':niceimageview')
+    implementation project(':dialogLib')
+    configurations.all {
+        resolutionStrategy {
+            force 'com.android.support:appcompat-v7:25.2.0'
+            force 'com.android.support:support-v4:27.0.2'
+        }
+    }
+    implementation files('libs/inject.jar')
+    implementation files('libs/ormlite-core-4.48.jar')
+    implementation files('libs/ormlite-android-4.48.jar')
+
+    implementation 'com.android.support:cardview-v7:27.1.1'
+}
