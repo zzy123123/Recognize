@@ -29,10 +29,6 @@ public final class MyFragment extends Fragment {
     RelativeLayout rlAbout;
     @ViewInject(R.id.rl_game)
     RelativeLayout rlGame;
-    @ViewInject(R.id.tv_logout)
-    private TextView tvLogout;
-    @ViewInject(R.id.avatar)
-    private RoundImageView avatar;
     @ViewInject(R.id.nickname)
     private TextView tvName;
     public static MyFragment newInstance() {

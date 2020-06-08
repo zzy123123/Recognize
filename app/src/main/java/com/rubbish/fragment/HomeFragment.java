@@ -269,25 +269,25 @@ public final class HomeFragment extends Fragment   {
                 if (data != null) {
                     final List<String> result = (List<String>) data.getSerializableExtra(GalleryActivity.PHOTOS);
                     Luban.with(getActivity())
-                            .load(result)                                   // 传人要压缩的图片列表
+                            .load(result)                                   // 传入要压缩的图片列表
                             .ignoreBy(100)                                  // 忽略不压缩图片的大小
                             .setTargetDir(GlobalFunction.getFolder(GlobalVariables.TEMP, ""))                        // 设置压缩后文件存储位置
                             .setCompressListener(new OnCompressListener() { //设置回调
                                 @Override
                                 public void onStart() {
-                                    // TODO 压缩开始前调用，可以在方法内启动 loading UI
+                                    //  压缩开始前调用，可以在方法内启动 loading UI
                                 }
 
                                 @Override
                                 public void onSuccess(File file) {
-                                    // TODO 压缩成功后调用，返回压缩后的图片文件
+                                    // 压缩成功后调用，返回压缩后的图片文件
                                     strImagePath = file.getAbsolutePath();
                                     Glide.with(getActivity()).load(strImagePath).into(avatar);
                                 }
 
                                 @Override
                                 public void onError(Throwable e) {
-                                    // TODO 当压缩过程出现问题时调用
+                                    //  当压缩过程出现问题时调用
                                 }
                             }).launch();    //启动压缩
                 } else {

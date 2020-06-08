@@ -84,7 +84,7 @@ public class GameActivity extends ManageActivity {
     private void showPhotoDialog() {
         ConfirmDialog confirmDialog = new ConfirmDialog(GameActivity.this);
         confirmDialog = confirmDialog.setTitle("答题结束");
-        confirmDialog = confirmDialog.setMsg("本次答题一共答对" + successTimes + "道题");
+        confirmDialog = confirmDialog.setMsg("本次答题一共答对" + successTimes + "道题。" + wasteSorting.rubbishName+"是什么垃圾快去查查吧！");
         confirmDialog.setClickListener(new ConfirmDialog.OnBtnClickListener() {
             @Override
             public void ok() {
@@ -111,7 +111,6 @@ public class GameActivity extends ManageActivity {
 
     }
 
-    //todo 跳转到关于
     public void onOkClick(View view) {
         if (wasteSorting.rubbishChoose == select_ans) {
             successTimes++;

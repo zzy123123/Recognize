@@ -37,9 +37,5 @@ public class ManageActivity extends Activity {
 		// TODO Auto-generated method stub
 		super.onPause();
 	}
-	
-	protected void initView(){
-		
-	}
 
 }

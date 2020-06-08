@@ -24,5 +24,6 @@ public class GlobalVariables {
 	public final static String APK_PATH = ROOT_PATH + "apk/";// 系统安装包路径
 	public final static String TEMP_PATH = ROOT_PATH + "temp/";// 临时目录
 
-    public static final String KEY = "1885ec88ac5fd476b0efe0b99efd0bec";
+    public static final String KEY = "e16588e7448136a3c685261c6bd05126";
+    //1885ec88ac5fd476b0efe0b99efd0bec
 }

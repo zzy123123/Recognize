@@ -6,7 +6,7 @@ android {
     defaultConfig {
         applicationId "com.recognize"
         minSdkVersion 19
-        targetSdkVersion 27
+        targetSdkVersion 22
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -17,14 +17,14 @@ android {
         }
         multiDexEnabled true
     }
-    splits {
-        abi {
-            enable true
-            reset()
-            include 'x86', 'x86_64', 'armeabi-v7a', 'arm64-v8a' //select ABIs to build APKs for
-            universalApk true //generate an additional APK that contains all the ABIs
-        }
-    }
+//    splits {
+//        abi {
+//            enable true
+//            reset()
+//            include 'x86', 'x86_64', 'armeabi-v7a', 'arm64-v8a' //select ABIs to build APKs for
+//            universalApk true //generate an additional APK that contains all the ABIs
+//        }
+//    }
     //指定jdk版本
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -80,7 +80,7 @@ dependencies {
     implementation 'com.library.tangxiaolv:telegramgallery:1.0.5'
     implementation 'top.zibin:Luban:1.1.3'
     implementation 'com.android.support:multidex:1.0.3'
-    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.android.support:support-v4:27.0.2'
     implementation project(':niceimageview')
     implementation project(':dialogLib')
     configurations.all {

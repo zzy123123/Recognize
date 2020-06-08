@@ -81,11 +81,10 @@ public final class AskFragment extends Fragment {
 
     private void initData() {
         lists = new ArrayList<>();
-        lists.add(new DataBean("厨余(湿)垃圾", Color.GREEN, "    厨余垃圾是指居民日常生活及食品加工、饮食服务、单位供餐等活动中产生的垃圾  "));
-        lists.add(new DataBean("其他垃圾", Color.CYAN, "    其他垃圾指危害比较少，可是没有再次利用的价值的垃圾，如建筑垃圾，生活垃圾等"));
-
-        lists.add(new DataBean("可回收物", Color.BLUE, "    可回收物就是可以再生循环的垃圾。本身或材质可再利用的纸类、硬纸板、玻璃、塑料、金属、塑料包装"));
-        lists.add(new DataBean("有害垃圾", Color.YELLOW, "    有害垃圾含有对人体健康有害的重金属、有毒的物质或者对环境造成现实危害或者潜在危害的废弃物"));
+        lists.add(new DataBean("湿垃圾（厨余垃圾）", 0xFFCD6839, R.string.text_1));
+        lists.add(new DataBean("干垃圾（其他垃圾）", Color.CYAN, R.string.text_2));
+        lists.add(new DataBean("可回收物",0xFF9AFF9A, R.string.text_3));
+        lists.add(new DataBean("有害垃圾", 0xFFF08080, R.string.text_4));
 
 
         LinearLayoutManager m = new LinearLayoutManager(getContext());
@@ -140,7 +139,8 @@ public final class AskFragment extends Fragment {
             return;
         }
         datas.clear();
-        datas = wasteSortingDB.query_name_type(word , item + "");
+        datas = wasteSortingDB.query(word);
+//        datas = wasteSortingDB.query_name_type(word , item + "");
         dataStr = new String[datas.size()];
         for (int i = 0; i < datas.size(); i++) {
             dataStr[i] = datas.get(i).rubbishName + ":" + datas.get(i).rubbishCategory;
